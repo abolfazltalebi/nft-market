@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "./components/Layout/Layout/Layout";
 import Home from "./pages/Home";
 import Marketplace from "./pages/Marketplace";
 import Rankings from "./pages/Rankings";
 import NftPages from "./pages/NftPages";
 import ConnectWallet from "./pages/ConnectWallet";
 import CreateAccount from "./pages/CreateAccount";
+import Layout from "./components/Layout/Layout";
 const router = createBrowserRouter([
   {
     path: "/",
