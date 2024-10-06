@@ -5,5 +5,5 @@
   font-family: "Quicksand", sans-serif;
 }
 .button{
-  @apply bg-action flex items-center justify-center text-white px-8 py-4 rounded-xl;
+  @apply bg-action flex items-center justify-center text-white font-bold px-8 py-4 rounded-xl;
 }

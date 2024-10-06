@@ -1,7 +1,8 @@
-import { Icon } from "@iconify/react";
+import { Icon } from "@iconify/react/dist/iconify.js";
 import sectionImage from "/public/images/pic-7.webp";
-export default function Home() {
-  return ( 
+
+export default function HeroSection() {
+  return (
     <>
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 ">
         <div className="space-y-8 order-last md:order-first">
@@ -13,9 +14,9 @@ export default function Home() {
             sell art from more than 20k NFT artists.
           </p>
           <div>
-            <button className="button w-full md:w-auto">
+            <button className="button w-full md:w-auto text-white">
               <Icon icon="ph:rocket-launch" width="22" height="22" />
-              Get Started 
+              Get Started
             </button>
           </div>
           <div className="flex items-center jus gap-20">

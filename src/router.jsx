@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Marketplace from "./pages/Marketplace";
 import Rankings from "./pages/Rankings";
 import NftPages from "./pages/NftPages";
