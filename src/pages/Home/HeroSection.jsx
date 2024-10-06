@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import sectionImage from "../../public/images/pic-7.webp";
+import sectionImage from "/public/images/pic-7.webp";
 
 export default function HeroSection() {
   return (
