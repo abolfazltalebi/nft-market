@@ -4,13 +4,13 @@ import Header from "./Header/Header";
 
 function Layout() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <Header />
-      <main className="">
+      <main className="container">
         <Outlet />
       </main>
       {/* <Footer /> */}
-    </div>
+    </>
   );
 }
 
