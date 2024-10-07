@@ -4,7 +4,7 @@ import Subscribe from "./Subscribe";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-white p-12  ">
+    <footer className="bg-secondary text-white py-12 md:p-12  ">
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-8 md:gap-4 container">
         <InfoWebsite />
         <ExploreItem />

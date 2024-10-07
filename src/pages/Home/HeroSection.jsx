@@ -19,7 +19,7 @@ export default function HeroSection() {
               Get Started
             </button>
           </div>
-          <div className="flex items-center jus gap-20">
+          <div className="flex items-center justify-between gap-8 md:gap-20">
             <div className="space-y-1 text-white">
               <p className="text-3xl font-bold italic">240k+</p>
               <p className="text-xl">Total Sale</p>
