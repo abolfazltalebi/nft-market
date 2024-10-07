@@ -21,12 +21,12 @@ export default function SubscribeWidget() {
               type="text"
               placeholder="Enter your email here"
               className="w-full px-2 py-4 rounded-xl"
-              onChange={(e) => setSubmit(e.target.value !== '')}
+              onChange={(e) => setSubmit(e.target.value !== "")}
             />
             {submit && (
               <button className="button w-full md:w-auto text-white">
                 <Icon icon="ph:rocket-launch" width="22" height="22" />
-                Get Started
+                Subscribe
               </button>
             )}
           </div>
