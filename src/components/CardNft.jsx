@@ -5,7 +5,7 @@ export default function CardNft({
   avatar,
   creator,
   price,
-  height,
+  highestBid,
 }) {
   return (
     <div
@@ -30,7 +30,7 @@ export default function CardNft({
           </div>
           <div>
             <p className="text-white/50">Highest Bid</p>
-            <p className="text-white font-semibold">{height}</p>
+            <p className="text-white font-semibold">{highestBid}</p>
           </div>
         </div>
       </div>

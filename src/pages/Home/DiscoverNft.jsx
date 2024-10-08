@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { nftItems } from "../../constants/DiscoverNftItem";
 import { Link } from "react-router-dom";
-import CardNft from "../../components/Layout/CardNft";
+import CardNft from "../../components/CardNft";
 export default function DiscoverNft() {
   return (
     <section className="my-12 space-y-6">
@@ -28,7 +28,7 @@ export default function DiscoverNft() {
               avatar={nftItem.avatar}
               creator={nftItem.creator}
               price={nftItem.price}
-              height={nftItem.height}
+              highestBid={nftItem.highestBid}
             />
           );
         })}
