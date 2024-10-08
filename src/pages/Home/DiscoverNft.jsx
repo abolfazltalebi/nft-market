@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { nftItems } from "../../constants/DiscoverNftItem";
 import { Link } from "react-router-dom";
+import CardNft from "../../components/Layout/CardNft";
 export default function DiscoverNft() {
   return (
     <section className="my-12 space-y-6">
@@ -19,35 +20,16 @@ export default function DiscoverNft() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {nftItems.map((nftItem) => {
           return (
-            <div
-              className="bg-secondary rounded-[1.4rem] transition-all duration-300 hover:-translate-y-3"
+            <CardNft
               key={nftItem.id}
-            >
-              <div>
-                <img src={nftItem.image} alt="" />
-              </div>
-              <div className="my-4 space-y-4 px-4">
-                <div className="title space-y-1">
-                  <h2 className="text-2xl font-bold text-white">
-                    {nftItem.title}
-                  </h2>
-                  <div className="flex items-center text-white gap-2">
-                    <img src={nftItem.avatar} className="size-8" alt="" />
-                    {nftItem.creator}
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-white/50">Price:</p>
-                    <p className="text-white font-semibold">{nftItem.price}</p>
-                  </div>
-                  <div>
-                    <p className="text-white/50">Highest Bid</p>
-                    <p className="text-white font-semibold">{nftItem.height}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              id={nftItem.id}
+              image={nftItem.image}
+              title={nftItem.title}
+              avatar={nftItem.avatar}
+              creator={nftItem.creator}
+              price={nftItem.price}
+              height={nftItem.height}
+            />
           );
         })}
       </div>

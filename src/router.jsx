@@ -3,9 +3,9 @@ import Home from "./pages/Home/Home";
 import Marketplace from "./pages/Marketplace";
 import Rankings from "./pages/Rankings";
 import NftPages from "./pages/NftPages";
-import ConnectWallet from "./pages/ConnectWallet";
 import Layout from "./components/Layout/Layout";
 import CreateAccount from "./pages/CreateAccount/CreateAccount";
+import ConnectWallet from "./pages/ConnectWallet/ConnectWallet";
 const router = createBrowserRouter([
   {
     path: "/",
