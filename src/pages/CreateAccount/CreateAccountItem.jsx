@@ -1,7 +1,42 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import InputField from "./InputField";
+import { inputFields } from "../../constants/InputFields";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function CreateAccountItem() {
+  const [massage, setMassage] = useState();
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  function handleSubmit(e) {
+    e.preventdefault();
+    console.log(formData);
+  }
+  function handleForm() {
+    if (Object.values(formData).some((value) => value === "")) {
+      setMassage("Please fill in all fields");
+    } else if (formData.password !== formData.confirmPassword) {
+      setMassage("Passwords do not match");
+    } else {
+      setMassage("Account created successfully");
+    }
+  }
+  const notify = () => {
+    handleForm();
+    toast(massage);
+  };
+
   return (
     <div className="space-y-8">
       <div className="space-y-4">
@@ -11,65 +46,30 @@ export default function CreateAccountItem() {
           NFTs.
         </p>
       </div>
-      <form action="" className="flex flex-col">
-        <div className="">
-          <input
-            type="text"
-            className="bg-white/80 rounded-full px-10 py-3 w-full"
-            placeholder="Username"
-          />
-          <Icon
-            icon="ph:user"
-            width="22"
-            height="22"
-            className=" relative -top-9 left-2"
-          />
-        </div>
-        <div className=" ">
-          <input
-            type="email"
-            className="bg-white/80 rounded-full px-10 py-3 w-full"
-            placeholder="Email"
-          />
-          <Icon
-            icon="carbon:email"
-            width="22"
-            height="22"
-            className=" relative -top-9 left-2"
-          />
-        </div>
-        <div className=" ">
-          <input
-            type="password"
-            className="bg-white/80 rounded-full px-10 py-3 w-full"
-            placeholder="Password"
-          />
-          <Icon
-            icon="solar:lock-password-broken"
-            width="22"
-            height="22"
-            className=" relative -top-9 left-2"
-          />
-        </div>
-        <div className=" ">
-          <input
-            type="password"
-            className="bg-white/80 rounded-full px-10 py-3 w-full"
-            placeholder="Confirm Password"
-          />
-          <Icon
-            icon="solar:lock-password-broken"
-            width="22"
-            height="22"
-            className=" relative -top-9 left-2"
-          />
-        </div>
+      <form action="" className="flex flex-col" onSubmit={handleSubmit}>
+        {inputFields.map((field) => {
+          return (
+            <InputField
+              key={field.name}
+              icon={field.icon}
+              type={field.type}
+              placeholder={field.placeholder}
+              value={formData[field.name]}
+              onChange={(e) =>
+                handleChange({
+                  target: { name: field.name, value: e.target.value },
+                })
+              }
+            />
+          );
+        })}
         <div>
           <Link to="/CreateAccount">
-            <button className="button">
+            <button className="button" type="submit" onClick={notify}>
               Create Account
             </button>
           </Link>
+          <ToastContainer />
         </div>
       </form>
     </div>
