@@ -10,7 +10,7 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className="flex items-center justify-between mx-12 py-8">
+    <header className="flex items-center justify-between mx-12 py-8 z-10">
       <HeaderLogo />
       <div className="hidden md:flex items-center justify-between gap-12 ">
         <Navbar />
@@ -20,7 +20,7 @@ export default function Header() {
         <Icon icon="gg:menu" width="22" height="22" />
       </div>
       {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 bg-black bg-opacity-95 flex flex-col justify-between p-12">
+        <div className="absolute top-0 left-0 w-full h-full transition-all duration-300 bg-black bg-opacity-95 flex flex-col justify-between p-12 z-10">
           <div className="flex items-center justify-between">
             <HeaderLogo />
             <button onClick={toggleMenu} className="text-white">

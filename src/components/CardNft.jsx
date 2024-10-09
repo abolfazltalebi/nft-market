@@ -9,7 +9,7 @@ export default function CardNft({
 }) {
   return (
     <div
-      className="bg-secondary rounded-[1.4rem] transition-all duration-300 hover:-translate-y-3"
+      className="bg-secondary rounded-[1.4rem] transition-all duration-300 hover:-translate-y-3 cursor-pointer"
       key={id}
     >
       <div>
