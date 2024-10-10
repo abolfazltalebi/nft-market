@@ -16,13 +16,13 @@ export function RankingSection({ items, key, searchTerm }) {
           id={nftItem.id}
           image={nftItem.image}
           name={nftItem.name}
-          charge={nftItem.charge} // اضافه کردن charge برای سازگاری
-          volume={nftItem.volume} // اضافه کردن volume برای سازگاری
+          charge={nftItem.charge} 
+          volume={nftItem.volume} 
           className={searchTerm ? "border-2 border-purple-500" : ""}
         />
       ))}
     </motion.div>
   ) : (
-    <div className="text-white">هیچ موردی برای نمایش وجود ندارد.</div>
+    <div className="text-white">Not found.</div>
   );
 }
