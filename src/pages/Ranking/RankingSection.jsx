@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export function RankingSection({ items, key, searchTerm }) {
   return items.length > 0 ? (
     <motion.div
