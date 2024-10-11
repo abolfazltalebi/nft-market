@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import RankingNft from "../../components/RankingNft";
 export function RankingSection({ items, key, searchTerm }) {
   return items.length > 0 ? (
     <motion.div
@@ -16,8 +16,8 @@ export function RankingSection({ items, key, searchTerm }) {
           id={nftItem.id}
           image={nftItem.image}
           name={nftItem.name}
-          charge={nftItem.charge} 
-          volume={nftItem.volume} 
+          charge={nftItem.charge}
+          volume={nftItem.volume}
           className={searchTerm ? "border-2 border-purple-500" : ""}
         />
       ))}
