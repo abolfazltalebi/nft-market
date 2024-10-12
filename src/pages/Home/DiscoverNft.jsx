@@ -18,6 +18,7 @@ export default function DiscoverNft() {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
         {nftItems.map((nftItem) => {
           return (
             <CardNft

@@ -15,7 +15,7 @@ export default function CardNft({
       <div>
         <img src={image} alt="" />
       </div>
-      <div className="my-4 space-y-4 px-4">
+      <div className="my-4 space-y-4 px-4 pb-4">
         <div className="title space-y-1">
           <h2 className="text-2xl font-bold text-white">{title}</h2>
           <div className="flex items-center text-white gap-2">
