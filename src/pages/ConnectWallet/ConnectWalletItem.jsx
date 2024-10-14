@@ -1,6 +1,6 @@
-import Metamask from "/public/images/icons/Metamask.svg";
-import walletConnect from "/public/images/icons/WalletConnect.svg";
-import coinbase from "/public/images/icons/Coinbase.svg";
+import Metamask from "/images/icons/Metamask.svg";
+import walletConnect from "/images/icons/WalletConnect.svg";
+import coinbase from "/images/icons/Coinbase.svg";
 import { Link } from "react-router-dom";
 export default function ConnectWalletItem() {
   return (

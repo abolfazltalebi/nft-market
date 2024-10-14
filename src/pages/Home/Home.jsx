@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import BestCategory from "./BestCategory";
 import DiscoverNft from "./DiscoverNft";
 import HeroSection from "./HeroSection";
@@ -9,6 +10,9 @@ import TrendingCollection from "./TrendingCollection";
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <HeroSection />
       <TrendingCollection />
       <TopCreators />

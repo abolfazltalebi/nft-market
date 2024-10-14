@@ -4,6 +4,7 @@ import MarketPlaceTitle from "./MarketPlaceTitle";
 import MarketPlaceSearch from "./MarketPlaceSearch";
 import MarketPlaceTabs from "./MarketPlaceTabs";
 import MarketPlaceItem from "./MarketPlaceItem";
+import { Helmet } from "react-helmet";
 
 export default function MarketPlace() {
   const [view, setView] = useState("nfts");
@@ -19,6 +20,9 @@ export default function MarketPlace() {
   );
   return (
     <section className="my-5 space-y-8 ">
+       <Helmet>
+        <title>Market Place</title>
+      </Helmet>
       <MarketPlaceTitle />
       <MarketPlaceSearch searchTerm={setSearchTerm} />
       <MarketPlaceTabs handleSwitch={handleSwitch} />

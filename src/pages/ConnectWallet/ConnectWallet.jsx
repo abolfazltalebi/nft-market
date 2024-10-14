@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import ConnectWalletImage from "./ConnectWalletImage";
 import ConnectWalletItem from "./ConnectWalletItem";
 
@@ -8,6 +9,9 @@ export default function ConnectWallet() {
         <ConnectWalletImage />
         <ConnectWalletItem />
       </section>
+      <Helmet>
+        <title>Connect Wallet</title>
+      </Helmet>
     </main>
   );
 }

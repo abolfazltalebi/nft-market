@@ -1,11 +1,11 @@
-import Art from "/public/images/pic.webp";
-import Collectibles from "/public/images/pic-1.webp";
-import Music from "/public/images/pic-2.webp";
-import Photography from "/public/images/pic-3.webp";
-import Video from "/public/images/pic-4.webp";
-import Utility from "/public/images/pic-5.webp";
-import Sport from "/public/images/pic-6.webp";
-import VirtualWorlds from "/public/images/pic-7.webp";
+import Art from "/images/pic.webp";
+import Collectibles from "/images/pic-1.webp";
+import Music from "/images/pic-2.webp";
+import Photography from "/images/pic-3.webp";
+import Video from "/images/pic-4.webp";
+import Utility from "/images/pic-5.webp";
+import Sport from "/images/pic-6.webp";
+import VirtualWorlds from "/images/pic-7.webp";
 export const category = [
   { id: 1, name: "Art", src: Art },
   { id: 2, name: "Collectibles", src: Collectibles },

@@ -1,8 +1,8 @@
-import { Collection, Nfts } from "../../constants/Marketplaceitem";
 import { useState } from "react";
 import RankingItems from "./RankingItem";
 import RankingTitle from "./RankingTitle";
 import RankingTabs from "./RankingTabs";
+import { Helmet } from "react-helmet";
 
 export default function MarketPlace() {
   const [view, setView] = useState("Today");
@@ -13,6 +13,9 @@ export default function MarketPlace() {
 
   return (
     <section className="my-5 space-y-8 ">
+       <Helmet>
+        <title>Market Place</title>
+      </Helmet>
       <RankingTitle />
       <RankingTabs handleSwitch={handleSwitch} />
       <RankingItems

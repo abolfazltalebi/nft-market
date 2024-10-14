@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import CreateAccountImage from "./CreateAccountImage";
 import CreateAccountItem from "./CreateAccountItem";
 
@@ -8,6 +9,9 @@ export default function CreateAccount() {
         <CreateAccountImage />
         <CreateAccountItem />
       </section>
+      <Helmet>
+        <title>Create Account</title>
+      </Helmet>
     </main>
   );
 }

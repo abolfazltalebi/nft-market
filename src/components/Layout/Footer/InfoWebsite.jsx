@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "/public/images/icons/Logo.svg";
+import logo from "/images/icons/Logo.svg";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function InfoWebsite() {

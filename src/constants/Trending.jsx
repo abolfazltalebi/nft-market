@@ -1,6 +1,6 @@
-import mainImage1 from "/public/images/photo-3.webp";
-import mainImage2 from "/public/images/photo-2.webp";
-import mainImage3 from "/public/images/photo-1.webp";
+import mainImage1 from "/images/photo-3.webp";
+import mainImage2 from "/images/photo-2.webp";
+import mainImage3 from "/images/photo-1.webp";
 export const trendingItems = [
   {
     id: 1,

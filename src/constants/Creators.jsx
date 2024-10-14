@@ -1,15 +1,15 @@
-import profile1 from "/public/images/avatars/avatar-1.webp";
-import profile2 from "/public/images/avatars/avatar-2.webp";
-import profile3 from "/public/images/avatars/avatar-3.webp";
-import profile4 from "/public/images/avatars/avatar-4.webp";
-import profile5 from "/public/images/avatars/avatar-5.webp";
-import profile6 from "/public/images/avatars/avatar-6.webp";
-import profile7 from "/public/images/avatars/avatar-7.webp";
-import profile8 from "/public/images/avatars/avatar-8.webp";
-import profile9 from "/public/images/avatars/avatar-9.webp";
-import profile10 from "/public/images/avatars/avatar-10.webp";
-import profile11 from "/public/images/avatars/avatar-11.webp";
-import profile12 from "/public/images/avatars/avatar-12.webp";
+import profile1 from "/images/avatars/Avatar-1.webp";
+import profile2 from "/images/avatars/Avatar-2.webp";
+import profile3 from "/images/avatars/Avatar-3.webp";
+import profile4 from "/images/avatars/Avatar-4.webp";
+import profile5 from "/images/avatars/Avatar-5.webp";
+import profile6 from "/images/avatars/Avatar-6.webp";
+import profile7 from "/images/avatars/Avatar-7.webp";
+import profile8 from "/images/avatars/Avatar-8.webp";
+import profile9 from "/images/avatars/Avatar-9.webp";
+import profile10 from "/images/avatars/Avatar-10.webp";
+import profile11 from "/images/avatars/Avatar-11.webp";
+import profile12 from "/images/avatars/Avatar-12.webp";
 export const creator = [
   { id: 1, name: "Keepitreal", price: "34.53 ETH", src: profile1 },
   { id: 2, name: "DigiLab", price: "34.53 ETH", src: profile2 },

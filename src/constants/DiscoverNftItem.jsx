@@ -1,9 +1,9 @@
-import Nft1 from "/public/images/pic-10.webp";
-import Nft2 from "/public/images/pic-8.webp";
-import Nft3 from "/public/images/pic-9.webp";
-import avatar1 from "/public/images/avatars/Avatar-1.webp";
-import avatar2 from "/public/images/avatars/Avatar-2.webp";
-import avatar3 from "/public/images/avatars/Avatar-3.webp";
+import Nft1 from "/images/pic-1.webp";
+import Nft2 from "/images/pic-2.webp";
+import Nft3 from "/images/pic-3.webp";
+import avatar1 from "/images/avatars/Avatar-1.webp";
+import avatar2 from "/images/avatars/Avatar-2.webp";
+import avatar3 from "/images/avatars/Avatar-3.webp";
 export const nftItems = [
   {
     id: 1,

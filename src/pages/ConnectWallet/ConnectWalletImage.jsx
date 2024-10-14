@@ -1,4 +1,4 @@
-import cAccount from "/public/images/CreateAccount.webp";
+import cAccount from "/images/CreateAccount.webp";
 export default function ConnectWalletImage() {
   return (
     <div>

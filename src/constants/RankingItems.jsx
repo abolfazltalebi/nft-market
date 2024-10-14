@@ -1,15 +1,15 @@
-import Nft1 from "/public/images/avatars/Avatar-1.webp";
-import Nft2 from "/public/images/avatars/Avatar-2.webp";
-import Nft3 from "/public/images/avatars/Avatar-3.webp";
-import Nft4 from "/public/images/avatars/Avatar-4.webp";
-import Nft5 from "/public/images/avatars/Avatar-5.webp";
-import Nft6 from "/public/images/avatars/Avatar-6.webp";
-import Nft7 from "/public/images/avatars/Avatar-7.webp";
-import Nft8 from "/public/images/avatars/Avatar-8.webp";
-import Nft9 from "/public/images/avatars/Avatar-9.webp";
-import Nft10 from "/public/images/avatars/Avatar-10.webp";
-import Nft11 from "/public/images/avatars/Avatar-11.webp";
-import Nft12 from "/public/images/avatars/Avatar-12.webp";
+import Nft1 from "/images/avatars/Avatar-1.webp";
+import Nft2 from "/images/avatars/Avatar-2.webp";
+import Nft3 from "/images/avatars/Avatar-3.webp";
+import Nft4 from "/images/avatars/Avatar-4.webp";
+import Nft5 from "/images/avatars/Avatar-5.webp";
+import Nft6 from "/images/avatars/Avatar-6.webp";
+import Nft7 from "/images/avatars/Avatar-7.webp";
+import Nft8 from "/images/avatars/Avatar-8.webp";
+import Nft9 from "/images/avatars/Avatar-9.webp";
+import Nft10 from "/images/avatars/Avatar-10.webp";
+import Nft11 from "/images/avatars/Avatar-11.webp";
+import Nft12 from "/images/avatars/Avatar-12.webp";
 export const TodayItems = [
   {
     id: 1,

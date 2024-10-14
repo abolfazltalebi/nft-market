@@ -1,17 +1,30 @@
+import ScrollAnimation from "../../components/ScrollAnimation";
 import { trendingItems } from "../../constants/Trending";
 
 export default function TrendingCollection() {
   return (
     <section className="flex flex-col gap-8 my-12">
       <div className="title-section space-y-4 text-white">
-        <h2 className="text-4xl font-bold">Trending Collection</h2>
-        <p className="text-base">
-          Checkout our weekly updated trending collection.
-        </p>
+        <ScrollAnimation
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6 }} 
+        >
+          <h2 className="text-4xl font-bold">Trending Collection</h2>
+          <p className="text-base">
+            Checkout our weekly updated trending collection.
+          </p>
+        </ScrollAnimation>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-between">
-        {trendingItems.map((item) => (
-          <div key={item.id} className="space-y-4">
+      {trendingItems.map((item,index) => (
+        <ScrollAnimation
+          key={item.id}
+          initial={{ opacity: 0, y: -50 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: index * 0.2 }} 
+        >
+          <div className="space-y-4">
             <div>
               <img
                 src={item.mainImage}
@@ -38,7 +51,8 @@ export default function TrendingCollection() {
               <p className="text-action animate-pulse">by {item.artist}</p>
             </div>
           </div>
-        ))}
+        </ScrollAnimation>
+      ))}
       </div>
     </section>
   );

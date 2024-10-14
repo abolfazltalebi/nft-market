@@ -1,6 +1,6 @@
-import wallet from "/public/images/icons/Icon-1.webp";
-import collection from "/public/images/icons/Icon-2.webp";
-import earning from "/public/images/icons/Icon.webp";
+import wallet from "/images/icons/Icon-1.webp";
+import collection from "/images/icons/Icon-2.webp";
+import earning from "/images/icons/Icon.webp";
 
 export const workItem = [
   {
