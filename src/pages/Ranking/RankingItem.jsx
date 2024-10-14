@@ -1,4 +1,4 @@
-import {  AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { MonthItem, TodayItems, WeekItems } from "../../constants/RankingItems";
 import { RankingSection } from "./RankingSection";
 
@@ -26,11 +26,9 @@ export default function RankingItems({ view, searchTerm }) {
           <RankingSection items={MonthItem} key="MonthItem" searchTerm={searchTerm} />
         )}
         {view === "AllItem" && (
-          <RankingSection items={TodayItems} key="AllItems" searchTerm={searchTerm}  />
+          <RankingSection items={TodayItems} key="AllItems" searchTerm={searchTerm} />
         )}
       </AnimatePresence>
     </div>
   );
 }
-
-

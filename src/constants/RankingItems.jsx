@@ -10,7 +10,6 @@ import Nft9 from "/public/images/avatars/Avatar-9.webp";
 import Nft10 from "/public/images/avatars/Avatar-10.webp";
 import Nft11 from "/public/images/avatars/Avatar-11.webp";
 import Nft12 from "/public/images/avatars/Avatar-12.webp";
-// import Nft13 from "/public/images/avatars/Avatar-13.webp";
 export const TodayItems = [
   {
     id: 1,

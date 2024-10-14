@@ -5,7 +5,7 @@ export default function MarketPlaceSearch({ searchTerm }) {
     <div>
         <input
           type="text"
-          className="w-full bg-secondary p-3 px-10 rounded-xl text-white border-2 border-transparent focus:border-purple-500" // اضافه کردن استایل برای بوردر بنفش
+          className="w-full bg-secondary p-3 px-10 rounded-xl text-white border-2 border-transparent focus:border-purple-500"
           placeholder="Search your favourite NFTs"
           onChange={(e) => searchTerm(e.target.value)}
         />

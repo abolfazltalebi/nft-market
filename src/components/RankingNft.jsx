@@ -1,4 +1,4 @@
-export default function RankingNft({ id, image, name, charge, nfts, volume }) {
+export default function RankingNft({ id, image, name, charge, volume }) {
   return (
     <div
       className="bg-secondary flex items-center justify-between p-3 px-9 gap-4 rounded-[1.4rem] transition-all duration-300 hover:-translate-y-3 cursor-pointer container"

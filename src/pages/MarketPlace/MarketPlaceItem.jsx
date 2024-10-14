@@ -22,7 +22,7 @@ export default function MarketPlaceItem({
           >
             {filteredNfts.map((nftItem) => {
               return (
-                <Link to={`/nft/${nftItem.id}`} key={nftItem.id}>
+                <Link to={`/NftDetails/${nftItem.id}`} key={nftItem.id}>
                   <CardNft
                     id={nftItem.id}
                     image={nftItem.image}
