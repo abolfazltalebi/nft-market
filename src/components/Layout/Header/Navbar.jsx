@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavbarItem } from "../../../constants/NavbarItem";
+import { NavbarItem } from "../../../constants/navbarItem";
 function Navbar() {
   return (
     <nav>

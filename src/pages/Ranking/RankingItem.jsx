@@ -1,5 +1,5 @@
 import { AnimatePresence } from "framer-motion";
-import { MonthItem, TodayItems, WeekItems } from "../../constants/RankingItems";
+import { MonthItem, TodayItems, WeekItems } from "../../constants/rankingItems";
 import { RankingSection } from "./RankingSection";
 
 export default function RankingItems({ view, searchTerm }) {

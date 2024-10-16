@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import InputField from "./InputField";
-import { inputFields } from "../../constants/InputFields";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { inputFields } from "../../constants/inputFields";
+import InputField from "./InputField";
 export default function CreateAccountItem() {
   const [massage, setMassage] = useState();
   const [formData, setFormData] = useState({

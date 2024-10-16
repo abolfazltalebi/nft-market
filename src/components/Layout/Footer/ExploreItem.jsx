@@ -6,11 +6,11 @@ export default function ExploreItem() {
       <h2 className="text-xl font-bold">Explore</h2>
       <div>
         <ul className="flex flex-col gap-4 text-white/50">
-          <NavLink to="/">Marketplace</NavLink>
-          <NavLink to="/">Rankings</NavLink>
-          <NavLink to="/">Connect a wallet</NavLink>
+          <NavLink to="/Marketplace">Marketplace</NavLink>
+          <NavLink to="/Rankings">Rankings</NavLink>
+          <NavLink to="/ConnectWallet">Connect a wallet</NavLink>
         </ul>
       </div>
-    </div>
+    </div> 
   );
 }
