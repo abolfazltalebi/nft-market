@@ -1,5 +1,5 @@
 import ScrollAnimation from "../../components/ScrollAnimation";
-import { category } from "../../constants/categoryItems";
+import { category } from "../../constants/category";
 
 export default function BestCategory() {
   return (
