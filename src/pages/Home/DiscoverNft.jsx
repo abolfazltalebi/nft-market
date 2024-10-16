@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { nftItems } from "../../constants/DiscoverNftItem";
+import { nftItems } from "../../constants/discoverNftItem";
 import { Link } from "react-router-dom";
 import CardNft from "../../components/CardNft";
 import ScrollAnimation from "../../components/ScrollAnimation";

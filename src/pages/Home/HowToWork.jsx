@@ -1,5 +1,5 @@
 import ScrollAnimation from "../../components/ScrollAnimation";
-import { workItem } from "../../constants/HowToWorkItmes.JSX";
+import { workItem } from "../../constants/howToWorkItmes.jsx";
 
 export default function HowToWork() {
   return (

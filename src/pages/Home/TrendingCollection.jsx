@@ -1,5 +1,5 @@
 import ScrollAnimation from "../../components/ScrollAnimation";
-import { trendingItems } from "../../constants/Trending";
+import { trendingItems } from "../../constants/trending";
 
 export default function TrendingCollection() {
   return (

@@ -1,4 +1,4 @@
-import { Collection, Nfts } from "../../constants/Marketplaceitem";
+import { Collection, Nfts } from "../../constants/marketplaceItem";
 import { useState } from "react";
 import MarketPlaceTitle from "./MarketPlaceTitle";
 import MarketPlaceSearch from "./MarketPlaceSearch";

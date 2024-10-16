@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { creator } from "../../constants/Creators";
+import { creator } from "../../constants/creators";
 import ScrollAnimation from "../../components/ScrollAnimation";
 export default function TopCreators() {
   return (
