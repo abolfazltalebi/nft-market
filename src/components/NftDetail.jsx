@@ -1,8 +1,7 @@
-import React from 'react';
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 
-const NftDetail = ({ nft }) => {
+function NftDetail({nft}) {
   if (!nft) {
     return <div>Loading...</div>;
   }
@@ -58,6 +57,6 @@ const NftDetail = ({ nft }) => {
       </div>
     </section>
   );
-};
+}
 
-export default NftDetail;
+export default NftDetail
