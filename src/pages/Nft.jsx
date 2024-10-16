@@ -1,4 +1,4 @@
-import { Nfts } from "../constants/marketplaceItem";
+import { Nfts } from "../constants/marketItem";
 import NftDetail from '../components/NftDetail';
 import { useParams } from 'react-router-dom';
 export default function Nft() {

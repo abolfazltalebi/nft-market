@@ -1,10 +1,10 @@
-import { Collection, Nfts } from "../constants/marketplaceItem";
 import { useState } from "react";
 import MarketPlaceTitle from "./MarketPlaceTitle";
 import MarketPlaceSearch from "./MarketPlaceSearch";
 import MarketPlaceTabs from "./MarketPlaceTabs";
 import MarketPlaceItem from "./MarketPlaceItem";
 import { Helmet } from "react-helmet";
+import { Collection, Nfts } from "../../constants/marketItem";
 
 export default function MarketPlace() {
   const [view, setView] = useState("nfts");
