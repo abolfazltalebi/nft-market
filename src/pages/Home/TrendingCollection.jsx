@@ -1,6 +1,6 @@
 import ScrollAnimation from "../../components/ScrollAnimation";
 import { trendingItems } from "../../constants/trending";
-
+ 
 export default function TrendingCollection() {
   return (
     <section className="flex flex-col gap-8 my-12">
