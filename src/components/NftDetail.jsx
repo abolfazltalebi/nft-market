@@ -7,7 +7,7 @@ function NftDetail({nft}) {
   }
 
   return (
-    <section className="my-5 space-y-4 grid grid-cols-2 gap-8">
+    <section className="my-5 space-y-4 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <img src={nft.image} className="w-full h-auto bg-auto rounded-3xl" alt={nft.title} />
       </div>
