@@ -9,9 +9,8 @@ export default function DiscoverNft() {
       <ScrollAnimation
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }} 
-        >
-   
+        transition={{ duration: 0.6 }}
+      >
         <div className="flex items-center justify-between md:flex-nowrap flex-wrap gap-4">
           <div className=" space-y-4 text-white">
             <h2 className="text-4xl font-bold">Discover More NFTs</h2>
@@ -25,16 +24,16 @@ export default function DiscoverNft() {
           </Link>
         </div>
       </ScrollAnimation>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {nftItems.map((nftItem, index) => {
-          return (
-            <ScrollAnimation
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: index * 0.2 }}
-              key={nftItem.id}
-            >
+      <ScrollAnimation
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {nftItems.map((nftItem) => {
+            return (
               <CardNft
+                key={nftItem.id}
                 id={nftItem.id}
                 image={nftItem.image}
                 title={nftItem.title}
@@ -43,10 +42,10 @@ export default function DiscoverNft() {
                 price={nftItem.price}
                 highestBid={nftItem.highestBid}
               />
-            </ScrollAnimation>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </ScrollAnimation>
     </section>
   );
 }

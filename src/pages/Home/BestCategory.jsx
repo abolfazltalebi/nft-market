@@ -7,22 +7,24 @@ export default function BestCategory() {
       <ScrollAnimation
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.6 }} 
-        >
+        transition={{ duration: 0.6 }}
+      >
         <div className="title-section text-white">
-          <h2 className="text-2xl font-bold">Best Categories</h2>
+          <h2 className="text-2xl md:text-4xl font-bold">Best Categories</h2>
         </div>
       </ScrollAnimation>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {category.map((categoryItem, index) => {
-          return (
-            <ScrollAnimation
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.3 }}
-              key={categoryItem.id}
-            >
-              <div className="bg-secondary rounded-[1.4rem] overflow-hidden group transition-all duration-300 hover:-translate-y-3">
+      <ScrollAnimation
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {category.map((categoryItem) => {
+            return (
+              <div
+                className="bg-secondary rounded-[1.4rem] overflow-hidden group transition-all duration-300 hover:-translate-y-3"
+                key={categoryItem.id}
+              >
                 <div className="relative">
                   <img
                     src={categoryItem.src}
@@ -37,10 +39,10 @@ export default function BestCategory() {
                   </h2>
                 </div>
               </div>
-            </ScrollAnimation>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </ScrollAnimation>
     </section>
   );
 }
