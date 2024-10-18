@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavbarItem } from "../../../constants/navbarItem";
-function Navbar() {
+
+function Navbar({ closeMenu }) { 
   return (
     <nav>
       <ul className="md:flex md:space-x-4 space-y-6 md:space-y-0">
@@ -10,6 +11,7 @@ function Navbar() {
               <Link
                 to={navItem.link}
                 className="text-white"
+                onClick={closeMenu} 
               >
                 {navItem.text}
               </Link>

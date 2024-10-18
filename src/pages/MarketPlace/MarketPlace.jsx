@@ -9,8 +9,10 @@ import { Collection, Nfts } from "../../constants/marketItem";
 export default function MarketPlace() {
   const [view, setView] = useState("nfts");
   const [searchTerm, setSearchTerm] = useState("");
+  const [activeTab, setActiveTab] = useState("nfts");
   const handleSwitch = (type) => {
     setView(type);
+    setActiveTab(type);
   };
   const filteredNfts = Nfts.filter((nft) =>
     nft.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -19,13 +21,13 @@ export default function MarketPlace() {
     collection.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   return (
-    <section className="my-5 space-y-8 ">
+    <section className="my-5">
        <Helmet>
         <title>Market Place</title>
       </Helmet>
       <MarketPlaceTitle />
       <MarketPlaceSearch searchTerm={setSearchTerm} />
-      <MarketPlaceTabs handleSwitch={handleSwitch} />
+      <MarketPlaceTabs handleSwitch={handleSwitch} activeTab={activeTab} />
       <MarketPlaceItem
         view={view}
         searchTerm={searchTerm}
