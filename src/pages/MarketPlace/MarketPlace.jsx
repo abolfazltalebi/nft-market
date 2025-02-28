@@ -21,7 +21,7 @@ export default function MarketPlace() {
     collection.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   return (
-    <section className="my-5">
+    <section className="my-5 space-y-2">
        <Helmet>
         <title>Market Place</title>
       </Helmet>

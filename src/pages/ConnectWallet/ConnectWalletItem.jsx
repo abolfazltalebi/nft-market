@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 export default function ConnectWalletItem() {
   return (
     <div className="space-y-4">
-      <h2 className="text-3xl text-white font-bold">Connect wallet</h2>
+      <h2 className="text-3xl  text-white font-bold">Connect wallet</h2>
       <p className="text-white/60">
         Choose a wallet you want to connect. There are several wallet providers.
       </p>
       <div className="flex flex-col gap-6">
         <Link to="/">
-          <div className="flex items-center w-full md:w-1/2  gap-3 border-2 border-action bg-secondary p-2 rounded-xl transition-all hover:-translate-y-1 cursor-pointer">
+          <div className="flex items-center w-full md:w-1/2  gap-3 border-2 border-action bg-secondary p-2 rounded-full transition-all hover:-translate-y-1 cursor-pointer">
             <div>
               <img src={Metamask} alt="" />
             </div>
@@ -21,7 +21,7 @@ export default function ConnectWalletItem() {
           </div>
         </Link>
         <Link to="/">
-          <div className="flex items-center gap-3 border-2 border-action bg-secondary p-2 w-full md:w-1/2 rounded-xl transition-all hover:-translate-y-1 cursor-pointer">
+          <div className="flex items-center gap-3 border-2 border-action bg-secondary p-2 w-full md:w-1/2 rounded-full transition-all hover:-translate-y-1 cursor-pointer">
             <div>
               <img src={walletConnect} alt="" />
             </div>
@@ -31,7 +31,7 @@ export default function ConnectWalletItem() {
           </div>
         </Link>
         <Link to="/">
-          <div className="flex items-center gap-3 border-2 border-action bg-secondary p-2 w-full md:w-1/2 rounded-xl transition-all hover:-translate-y-1 cursor-pointer">
+          <div className="flex items-center gap-3 border-2 border-action bg-secondary p-2 w-full md:w-1/2 rounded-full transition-all hover:-translate-y-1 cursor-pointer">
             <div>
               <img src={coinbase} alt="" />
             </div>

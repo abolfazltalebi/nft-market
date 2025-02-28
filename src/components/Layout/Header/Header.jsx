@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between mx-4 md:mx-12 py-8 z-10">
+    <header className="flex items-center justify-between mx-4 md:mx-12 py-5 z-10">
       <HeaderLogo />
       <div className="hidden md:flex items-center justify-between gap-12 ">
         <Navbar />

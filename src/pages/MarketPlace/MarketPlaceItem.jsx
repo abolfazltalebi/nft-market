@@ -9,7 +9,7 @@ export default function MarketPlaceItem({
   filteredCollections,
 }) {
   return (
-    <div className="mt-6">
+    <div className="mt-9">
       <AnimatePresence>
         {view === "nfts" ? (
           <motion.div
